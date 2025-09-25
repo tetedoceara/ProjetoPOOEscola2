@@ -84,3 +84,10 @@ def secretaria():
 cadastro()
 refeitorio()
 secretaria()
+
+# git branch >para ver qual é a branch
+# git checkout -b "nome da branch"
+# git status >para ver o status
+# git add . > mandar tudo que foi feito pro git
+# git commit -m "eu fiz uma melhoria"
+# git push origin juesjo >subir para o repositorio
