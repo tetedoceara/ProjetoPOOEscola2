@@ -1,20 +1,20 @@
-# class Casa:
-#     def __init__(self, cor = None, quartos= None, banheiros = None, tamanho = None):
-#         self.cor = cor
-#         self.quartos = quartos
-#         self.banheiros = banheiros
-#         self.tamanho = tamanho
+class Casa:
+    def __init__(self, cor = None, quartos= None, banheiros = None, tamanho = None):
+        self.cor = cor
+        self.quartos = quartos
+        self.banheiros = banheiros
+        self.tamanho = tamanho
 
-#     def descrever(self):
-#         self.cor = input("Qual a cor da casa?\n")
-#         self.quartos = input("Quantos quartos tem a casa?\n")
-#         self.banheiros = input("Quantos banheiros tem a casa?\n")
-#         self.tamanho = input("Qual o tamanho da casa em m²?\n")
+    def descrever(self):
+        self.cor = input("Qual a cor da casa?\n")
+        self.quartos = input("Quantos quartos tem a casa?\n")
+        self.banheiros = input("Quantos banheiros tem a casa?\n")
+        self.tamanho = input("Qual o tamanho da casa em m²?\n")
 
-#         return f"Esta casa é {self.cor}, tem {self.quartos} quartos, {self.banheiros} banheiros e {self.tamanho}m²."
+        return f"Esta casa é {self.cor}, tem {self.quartos} quartos, {self.banheiros} banheiros e {self.tamanho}m²."
     
-# cs = Casa()
-# print(cs.descrever())
+cs = Casa()
+print(cs.descrever())
 
 
 
