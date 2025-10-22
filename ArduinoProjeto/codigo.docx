@@ -1,0 +1,126 @@
+// Sensor de ENTRADA
+#define TRIG_ENTRADA 3
+#define ECHO_ENTRADA 2
+
+// Sensor de SAÍDA
+#define TRIG_SAIDA 10
+#define ECHO_SAIDA 9
+
+// LEDs (opcional)
+#define LED_ENTRADA 13
+#define LED_SAIDAE 12
+#define LED_Saida 5
+#define LED_SAIDA 6
+
+// Variáveis de distância
+float distanciaEntradaAtual = 0;
+float distanciaEntradaAnterior = 0;
+
+float distanciaSaidaAtual = 0;
+float distanciaSaidaAnterior = 0;
+
+int contadorPessoas = 0;
+
+const float VARIACAO_MINIMA = 12.0; // Variação mínima em cm para considerar movimento
+
+bool movimentoEntradaDetectado = false;
+bool movimentoSaidaDetectado = false;
+
+void setup() {
+  Serial.begin(9600);
+
+  // Pinos sensor entrada
+  pinMode(TRIG_ENTRADA, OUTPUT);
+  pinMode(ECHO_ENTRADA, INPUT);
+
+  // Pinos sensor saída
+  pinMode(TRIG_SAIDA, OUTPUT);
+  pinMode(ECHO_SAIDA, INPUT);
+
+  // LEDs
+  pinMode(LED_ENTRADA, OUTPUT);
+  pinMode(LED_SAIDAE, OUTPUT);
+  pinMode(LED_Saida, OUTPUT);
+  pinMode(LED_SAIDA, OUTPUT);
+
+  digitalWrite(TRIG_ENTRADA, LOW);
+  digitalWrite(TRIG_SAIDA, LOW);
+
+  delay(1000); // Estabiliza sensores
+}
+
+void loop() {
+  // --- Sensor de Entrada ---
+  digitalWrite(LED_ENTRADA, HIGH);
+  distanciaEntradaAtual = medirDistancia(TRIG_ENTRADA, ECHO_ENTRADA);
+
+  if (distanciaEntradaAtual > 0) {
+    float difEntrada = abs(distanciaEntradaAtual - distanciaEntradaAnterior);
+
+    if (difEntrada >= VARIACAO_MINIMA && !movimentoEntradaDetectado) {
+      movimentoEntradaDetectado = true;
+      contadorPessoas++;
+      Serial.println("Pessoa ENTRANDO");
+      Serial.print("Total de pessoas: ");
+      Serial.println(contadorPessoas);
+      
+      digitalWrite(LED_SAIDAE, HIGH);
+    }
+
+    if (difEntrada < VARIACAO_MINIMA) {
+      movimentoEntradaDetectado = false;
+    }
+
+    distanciaEntradaAnterior = distanciaEntradaAtual;
+  }
+
+  // --- Sensor de Saída ---
+  digitalWrite(LED_Saida, HIGH);
+  distanciaSaidaAtual = medirDistancia(TRIG_SAIDA, ECHO_SAIDA);
+
+  if (distanciaSaidaAtual > 0) {
+    float difSaida = abs(distanciaSaidaAtual - distanciaSaidaAnterior);
+
+    if (difSaida >= VARIACAO_MINIMA && !movimentoSaidaDetectado) {
+      movimentoSaidaDetectado = true;
+
+      if (contadorPessoas > 0) { // evita número negativo
+        contadorPessoas--;
+        Serial.println("Pessoa SAINDO");
+      } else {
+        Serial.println("Saída detectada mas contagem já está em zero.");
+      }
+
+      Serial.print("Total de pessoas: ");
+      Serial.println(contadorPessoas);
+
+      digitalWrite(LED_SAIDA, HIGH);
+      digitalWrite(LED_Saida, LOW);
+    }
+
+    if (difSaida < VARIACAO_MINIMA) {
+      movimentoSaidaDetectado = false;
+    }
+
+    distanciaSaidaAnterior = distanciaSaidaAtual;
+  }
+
+  delay(1000); // Controle de taxa de leitura
+  digitalWrite(LED_SAIDAE, LOW);
+  digitalWrite(LED_SAIDA, LOW);
+}
+
+float medirDistancia(int trigPin, int echoPin) {
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(500);
+  digitalWrite(trigPin, LOW);
+
+  long duracao = pulseIn(echoPin, HIGH, 30000); // timeout de 30ms
+
+  if (duracao == 0) {
+    return -1; // erro
+  }
+
+  float distancia = duracao * 0.034 / 2;
+  return distancia;
+}
