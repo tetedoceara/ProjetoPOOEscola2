@@ -1,5 +1,5 @@
 class Animal:
-    def __init__(self, cor=None, peso=None, tamanho=None, raca=None, sexo=None) -> None:
+    def __init__(self, cor=None, peso=None, tamanho=None, raca=None, sexo=None):
         self.cor = cor
         self.peso = peso
         self.tamanho = tamanho
@@ -7,7 +7,7 @@ class Animal:
         self.sexo = sexo
 
 class Gato(Animal):
-    def __init__(self, cor=None, peso=None, tamanho=None, raca=None, vacina=None, nome=None, sexo=None) -> None:
+    def __init__(self, cor=None, peso=None, tamanho=None, raca=None, vacina=None, nome=None, sexo=None):
         if cor is None:
             cor = input("Digite a cor do gato: ")
         if peso is None:
@@ -26,7 +26,7 @@ class Gato(Animal):
         self.vacina = vacina
         self.nome = nome
 
-    def apresentar(self) -> str:
+    def apresentar(self):
         nome = self.nome or "<sem nome>"
         raca = self.raca or "<sem raça>"
         peso = self.peso or "<sem peso>"
@@ -38,7 +38,7 @@ class Gato(Animal):
         return f"Oi, o nome do(a) gato(a) é {nome}, a raça dele(a) é {raca}, ele(a) pesa {peso}kg, tem {tamanho}cm, a cor dele(a) é {cor}, e ele(a) é do sexo {sexo}, e está ou não vacinado: {vacina}"
 
 class Cachorro(Animal):
-    def __init__(self, cor=None, peso=None, tamanho=None, raca=None, vacina=None, nome=None, sexo=None) -> None:
+    def __init__(self, cor=None, peso=None, tamanho=None, raca=None, vacina=None, nome=None, sexo=None):
         if cor is None:
             cor = input("Digite a cor do cachorro: ")
         if peso is None:
@@ -57,7 +57,7 @@ class Cachorro(Animal):
         self.vacina = vacina
         self.nome = nome
 
-    def apresentar(self) -> str:
+    def apresentar(self):
         nome = self.nome or "<sem nome>"
         raca = self.raca or "<sem raça>"
         peso = self.peso or "<sem peso>"
@@ -69,7 +69,7 @@ class Cachorro(Animal):
         return f"Oi, o nome do(a) cachorro(a) é {nome}, a raça dele(a) é {raca}, ele(a) pesa {peso}kg, tem {tamanho}cm, a cor dele(a) é {cor}, e ele(a) é do sexo {sexo}, e está ou não vacinado: {vacina}"
 
 class Passaro(Animal):
-    def __init__(self, cor=None, peso=None, tamanho=None, raca=None, nome=None, sexo=None, vacina=None) -> None:
+    def __init__(self, cor=None, peso=None, tamanho=None, raca=None, nome=None, sexo=None, vacina=None):
         if cor is None:
             cor = input("Digite a cor do pássaro: ")
         if peso is None:
@@ -88,7 +88,7 @@ class Passaro(Animal):
         self.nome = nome
         self.vacina = vacina
 
-    def apresentar(self) -> str:
+    def apresentar(self):
         nome = self.nome or "<sem nome>"
         raca = self.raca or "<sem raça>"
         peso = self.peso or "<sem peso>"
@@ -100,7 +100,7 @@ class Passaro(Animal):
         return f"Oi, o nome do(a) pássaro é {nome}, a raça dele(a) é {raca}, ele(a) pesa {peso}kg, tem {tamanho}cm, a cor dele(a) é {cor}, e ele(a) é do sexo {sexo}, e está ou não vacinado: {vacina}"
     
 class Peixe(Animal):
-    def __init__(self, cor=None, peso=None, tamanho=None, raca=None, nome=None, sexo=None, vacina=None) -> None:
+    def __init__(self, cor=None, peso=None, tamanho=None, raca=None, nome=None, sexo=None, vacina=None):
         if cor is None:
             cor = input("Digite a cor do peixe: ")
         if peso is None:
@@ -119,7 +119,7 @@ class Peixe(Animal):
         self.nome = nome
         self.vacina = vacina
 
-    def apresentar(self) -> str:
+    def apresentar(self):
         nome = self.nome or "<sem nome>"
         raca = self.raca or "<sem raça>"
         peso = self.peso or "<sem peso>"
@@ -131,7 +131,7 @@ class Peixe(Animal):
         return f"Oi, o nome do(a) peixe é {nome}, a raça dele(a) é {raca}, ele(a) pesa {peso}kg, tem {tamanho}cm, a cor dele(a) é {cor}, e ele(a) é do sexo {sexo}, e está ou não vacinado: {vacina}"
     
 class Outro(Animal):
-    def __init__(self, cor=None, peso=None, tamanho=None, raca=None, nome=None, sexo=None, tipo=None, vacina=None) -> None:
+    def __init__(self, cor=None, peso=None, tamanho=None, raca=None, nome=None, sexo=None, tipo=None, vacina=None):
         if tipo is None:
             tipo = input("Digite a espécie do animal: ")
         if cor is None:
@@ -153,7 +153,7 @@ class Outro(Animal):
         self.vacina = vacina
         self.tipo = tipo
 
-    def apresentar(self) -> str:
+    def apresentar(self):
         nome = self.nome or "<sem nome>"
         tipo = self.tipo or "<sem tipo>"
         raca = self.raca or "<sem raça>"
@@ -165,11 +165,11 @@ class Outro(Animal):
 
         return f"Oi, seu animal é um(uma) {tipo}, o nome do(a) animal é {nome}, a raça dele(a) é {raca}, ele(a) pesa {peso}kg, tem {tamanho}cm, a cor dele(a) é {cor}, e ele(a) é do sexo {sexo}, e está ou não vacinado: {vacina}"
 
-def apresentar_todos(animais: list[Animal]) -> list[str]:
+def apresentar_todos(animais):
     return [animal.apresentar() for animal in animais]
 
 
-def escolher_animal() -> Animal:
+def escolher_animal():
     prompt = (
         "Digite qual é o animal que você deseja cadastrar:\n"
         "1 - Gato\n"
@@ -193,5 +193,20 @@ def escolher_animal() -> Animal:
         else:
             print("Opção inválida. Tente novamente.")
 
-animal = Animal()
-Animal.escolher_animal()
+def main():
+    animais = []
+    try:
+        n = int(input("Quantos animais deseja cadastrar? "))
+    except Exception:
+        n = 1
+
+    for _ in range(n):
+        animais.append(escolher_animal())
+
+    resultados = apresentar_todos(animais)
+    for r in resultados:
+        print(r)
+
+
+if __name__ == "__main__":
+    main()
