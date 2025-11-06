@@ -155,7 +155,7 @@ class Outro(Animal):
 
     def apresentar(self):
         nome = self.nome or "<sem nome>"
-        tipo = self.tipo or "<sem tipo>"
+        tipo = self.tipo or "<sem espécie>"
         raca = self.raca or "<sem raça>"
         peso = self.peso or "<sem peso>"
         tamanho = self.tamanho or "<sem tamanho>"
@@ -210,3 +210,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+"""  """
