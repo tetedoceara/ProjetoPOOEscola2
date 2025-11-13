@@ -1,0 +1,134 @@
+CLOUD PÚBLICA:
+
+Uma nuvem pública é um modelo de TI em que os provedores de serviços de nuvem pública disponibilizam serviços de computação,
+incluindo computação e armazenamento, ambientes de desenvolvimento e implantação
+e aplicativos sob demanda para organizações e pessoas pela Internet pública.
+
+BENEFÍCIOS:
+
+Escalabilidade:
+As nuvens públicas oferecem escalabilidade praticamente ilimitada. 
+Você pode aumentar ou diminuir rapidamente o uso de recursos com base na demanda, sem se preocupar com a falta de capacidade. 
+Você pode implantar serviços mais próximos de seus usuários finais a partir de datacenters de nuvem pública em todo o mundo. 
+Isso oferece melhor desempenho mesmo em escala.
+
+Eficiência de custos:
+As nuvens públicas operam em um modelo de pagamento conforme o uso. 
+Em vez de investir muito de maneira antecipada em hardware e infraestrutura, você paga apenas pelos recursos que usa. 
+Isso pode levar a uma redução de custos significativa. 
+Diferentes modelos de preços, como nível gratuito e economize ao confirmar, permitem que sua organização otimize ainda mais os custos.
+
+Menor tempo de introdução no mercado:
+O provedor de serviços de nuvem é responsável pela manutenção, atualizações e correções da infraestrutura. 
+Assim, suas equipes de TI podem se concentrar em atividades de valor agregado em vez de tarefas rotineiras de manutenção. 
+Seus desenvolvedores podem priorizar a experimentação e o desenvolvimento de soluções para atender aos requisitos do cliente com mais eficiência. 
+Podem utilizar as tecnologias mais recentes sem pesquisar, comprar e configurar a infraestrutura.
+Com serviços e ferramentas pré-construídos, você pode implantar novas aplicações e serviços em uma fração do tempo necessário com os métodos tradicionais.
+
+Confiabilidade:
+Seu provedor de nuvem pública investe muito em infraestrutura e mantém vários datacenters em todo o mundo. 
+Você tem acesso a hardware e software mais recentes, pois os fornecedores terceirizados garantem que todas as atualizações e patches estejam atualizados. 
+Você também pode acessar soluções automáticas de backup e recuperação de desastres, o que ajuda a garantir a resiliência dos dados. 
+Você obtém alta disponibilidade e confiabilidade da redundância automática acopladas a tecnologias como redes de distribuição de conteúdo e balanceadores de carga.
+
+Sustentabilidade:
+Os provedores de serviços de nuvem pública usam economias de escala para otimizar o uso de energia e têm capital para investir em fontes de energia renováveis.
+Eles podem se concentrar na eficiência energética em todos os aspectos de sua infraestrutura de nuvem, 
+desde o design do datacenter e a seleção de hardware até a modelagem de desempenho para melhoria contínua. 
+As empresas podem reduzir sua pegada de carbono utilizando recursos compartilhados em uma nuvem pública. 
+Seu provedor de serviços em nuvem também pode oferecer ferramentas e recursos para monitorar o impacto 
+ambiental do uso de seus serviços em nuvem e reduzir sua pegada ambiental.
+
+Tipos de serviços em nuvem pública:
+
+Infraestrutura como Serviço (IaaS): 
+
+Oferece recursos de infraestrutura virtualizados sob demanda. 
+O provedor gerencia o hardware subjacente, mas o cliente tem controle sobre sistemas operacionais, aplicativos e outros dados,
+usando a nuvem como um grande pool de recursos de computação.
+
+Plataforma como Serviço (PaaS): 
+
+Fornece uma plataforma que os desenvolvedores podem usar para criar, 
+executar e gerenciar aplicativos sem a necessidade de gerenciar a infraestrutura de 
+hardware e sistema operacional subjacente.
+
+Software como Serviço (SaaS):
+
+Entrega software completo pela internet, como aplicativos de e-mail na web ou ferramentas de produtividade online. 
+Os usuários acessam o software por meio de um navegador web sem a necessidade de qualquer 
+instalação ou gerenciamento de infraestrutura. 
+
+
+EMPRESAS QUE USAM NUVENS PÚBLICAS:
+
+Spotify: Usa a nuvem pública para a escalabilidade necessária para atender um grande número de usuários simultaneamente.
+Amazon: A Amazon, através do Amazon Web Services (AWS), é uma das maiores provedoras de serviços de nuvem pública do mundo. 
+Google: A Google é um dos grandes exemplos de empresa que utiliza a computação em nuvem para armazenar dados. 
+Além de oferecer o serviço de nuvem, a Google Cloud Platform, a empresa possui ferramentas gratuitas para os usuários da sua conta, como o Google Drive. 
+Dessa forma, a ferramenta permite o armazenamento e compartilhamento de fotos, vídeos, documentos pessoais, entre outros documentos
+
+CLOUD PRIVATE:
+
+Uma nuvem privada é um ambiente de computação em nuvem dedicado a uma única organização. 
+Qualquer infraestrutura de nuvem tem recursos de computação subjacentes, como CPU e armazenamento, que você provisiona sob demanda por meio de um portal de autoatendimento.
+Em uma nuvem privada, todos os recursos estão isolados e sob o controle de uma organização. Assim, a nuvem privada também é chamada de nuvem interna ou corporativa.
+
+TIPOS DE CLOUD PRIVATE:
+
+Nuvem privada on-premises:
+Uma nuvem privada on-premises é aquela que pode ser implantada em seus recursos em um datacenter interno. 
+Você deve adquirir os recursos, mantê-los e atualizá-los, além de garantir a segurança. 
+O gerenciamento de nuvem privada on-premises é caro e requer investimento inicial pesado e despesas contínuas.
+
+Nuvem privada gerenciada:
+Uma nuvem privada gerenciada é um ambiente de locatário único totalmente gerenciado por terceiros. 
+Por exemplo, a infraestrutura de TI de sua organização pode ser adquirida e mantida por uma organização terceirizada no datacenter dela. 
+Esse terceiro fornece manutenção, atualizações, suporte e gerenciamento remoto dos recursos da nuvem privada. 
+Embora nuvens privadas gerenciadas sejam caras, elas são mais convenientes do que as soluções on-premises.
+
+Nuvem privada virtual:
+Uma nuvem privada virtual é uma nuvem privada que pode ser implantada em uma infraestrutura de nuvem pública. 
+É um ambiente seguro e isolado, no qual os usuários da nuvem privada podem executar códigos, hospedar sites, 
+armazenar dados e executar outras tarefas que exigem um datacenter tradicional. 
+As nuvens privadas virtuais oferecem a conveniência e a escalabilidade dos recursos da computação em nuvem pública com eficiência,
+além de controle e segurança adicionais.
+
+EMPRESAS QUE USAM NUVENS PÚBLICAS:
+
+Netflix: Utiliza a nuvem pública para a maior parte de suas operações, mas recorre à nuvem privada para aplicativos que exigem maior controle.
+NASA: Emprega a nuvem pública para processamento de dados em larga escala e a privada para dados sensíveis. 
+
+CLOUD HYBRID:
+
+Uma nuvem híbrida é um projeto de infraestrutura de TI que integra perfeitamente as nuvens públicas e privadas de uma empresa.
+Como resultado, você pode armazenar seus dados e executar suas aplicações em vários ambientes sem notar nenhuma diferença.
+Seu ambiente de nuvem híbrida consolida sua infraestrutura, para que você possa provisionar, dimensionar e gerenciar centralmente todos os seus recursos de computação.
+Os serviços de nuvem híbrida estendem seu modelo de computação em nuvem privada para a nuvem pública.
+Por exemplo, suas aplicações de nuvem privada podem acessar recursos de nuvem pública quando há um pico de tráfego com o qual seu datacenter não consegue lidar.
+Você também pode usar serviços de computação em nuvem híbrida para fazer uma transição suave de ambientes de nuvem privada para nuvens públicas.
+
+TIPOS DE CLOUD HYBRID:
+
+Nuvem Híbrida Tradicional: 
+Combina a infraestrutura local (on-premise) existente da empresa com serviços de nuvem pública. É o modelo mais comum, focado na migração gradual de cargas de trabalho.
+
+Multicloud Híbrida:
+Uma variação que envolve o uso de múltiplos provedores de nuvem pública (por exemplo, AWS e Azure) juntamente com uma nuvem privada.
+Isso aumenta a flexibilidade e evita a dependência de um único fornecedor.
+
+Nuvem Híbrida com Edge Computing:
+Integra recursos de nuvem (pública e privada) com dispositivos de borda (edge devices)
+para processamento de dados mais rápido perto de onde são gerados (comum em IoT e manufatura).
+
+Containers e Microsserviços:
+O uso de tecnologias como Kubernetes e Docker permite a criação de aplicações portáteis que podem ser movidas facilmente entre nuvens públicas e privadas,
+otimizando o ambiente híbrido.
+
+EMPRESAS QUE UTILIZAM CLOUD HYBRID:
+
+Toyota:
+Otimiza operações globais de fabricação e vendas com infraestrutura híbrida para milhares de concessionárias e fábricas.
+
+Dropbox:
+Armazena arquivos em nuvens públicas como AWS, mas usa nuvem privada para dados sensíveis e conformidade.
