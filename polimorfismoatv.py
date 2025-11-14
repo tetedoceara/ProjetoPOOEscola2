@@ -1,16 +1,25 @@
-class Aluno:
+
+class estudante:
+    def estudar(self):
+        print("Estudando...")
+
+
+class Aluno(estudante):
     def estudar(self):
         print("Estudando Matemática para a prova")
 
-class Professor:
+
+class Professor(estudante):
     def estudar(self):
         print("Estudando Matemática para preparar a aula")
 
-class Universitario:
+
+class Universitario(estudante):
     def estudar(self):
         print("Estudando Matemática para o TCC")
 
-class Engenheiro:
+
+class Engenheiro(estudante):
     def estudar(self):
         print("Estudando Matemática para o projeto de engenharia")
 

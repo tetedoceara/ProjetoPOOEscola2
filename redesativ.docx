@@ -4,41 +4,6 @@ Uma nuvem pública é um modelo de TI em que os provedores de serviços de nuvem
 incluindo computação e armazenamento, ambientes de desenvolvimento e implantação
 e aplicativos sob demanda para organizações e pessoas pela Internet pública.
 
-BENEFÍCIOS:
-
-Escalabilidade:
-As nuvens públicas oferecem escalabilidade praticamente ilimitada. 
-Você pode aumentar ou diminuir rapidamente o uso de recursos com base na demanda, sem se preocupar com a falta de capacidade. 
-Você pode implantar serviços mais próximos de seus usuários finais a partir de datacenters de nuvem pública em todo o mundo. 
-Isso oferece melhor desempenho mesmo em escala.
-
-Eficiência de custos:
-As nuvens públicas operam em um modelo de pagamento conforme o uso. 
-Em vez de investir muito de maneira antecipada em hardware e infraestrutura, você paga apenas pelos recursos que usa. 
-Isso pode levar a uma redução de custos significativa. 
-Diferentes modelos de preços, como nível gratuito e economize ao confirmar, permitem que sua organização otimize ainda mais os custos.
-
-Menor tempo de introdução no mercado:
-O provedor de serviços de nuvem é responsável pela manutenção, atualizações e correções da infraestrutura. 
-Assim, suas equipes de TI podem se concentrar em atividades de valor agregado em vez de tarefas rotineiras de manutenção. 
-Seus desenvolvedores podem priorizar a experimentação e o desenvolvimento de soluções para atender aos requisitos do cliente com mais eficiência. 
-Podem utilizar as tecnologias mais recentes sem pesquisar, comprar e configurar a infraestrutura.
-Com serviços e ferramentas pré-construídos, você pode implantar novas aplicações e serviços em uma fração do tempo necessário com os métodos tradicionais.
-
-Confiabilidade:
-Seu provedor de nuvem pública investe muito em infraestrutura e mantém vários datacenters em todo o mundo. 
-Você tem acesso a hardware e software mais recentes, pois os fornecedores terceirizados garantem que todas as atualizações e patches estejam atualizados. 
-Você também pode acessar soluções automáticas de backup e recuperação de desastres, o que ajuda a garantir a resiliência dos dados. 
-Você obtém alta disponibilidade e confiabilidade da redundância automática acopladas a tecnologias como redes de distribuição de conteúdo e balanceadores de carga.
-
-Sustentabilidade:
-Os provedores de serviços de nuvem pública usam economias de escala para otimizar o uso de energia e têm capital para investir em fontes de energia renováveis.
-Eles podem se concentrar na eficiência energética em todos os aspectos de sua infraestrutura de nuvem, 
-desde o design do datacenter e a seleção de hardware até a modelagem de desempenho para melhoria contínua. 
-As empresas podem reduzir sua pegada de carbono utilizando recursos compartilhados em uma nuvem pública. 
-Seu provedor de serviços em nuvem também pode oferecer ferramentas e recursos para monitorar o impacto 
-ambiental do uso de seus serviços em nuvem e reduzir sua pegada ambiental.
-
 Tipos de serviços em nuvem pública:
 
 Infraestrutura como Serviço (IaaS): 
